@@ -1,160 +1,392 @@
-1. What are some fundamental cognitive abilities that distinguish the human brain from the brains of other animals?
+1. Explain the role of pipelining in a CPU architecture and how it improves performance.
 
-2. Why is understanding the differences in information processing between humans and other animals important?
+2. What modifications are necessary to extend a SEQ processor to support a new instruction, and how would you implement an iopq instruction?
 
-3. Explain the concept of 'Encephalization Quotient (EQ)' and its significance in cognitive science.
+3. Describe the process of simulating a Y86-64 program using yas and yis and the importance of these tools in the Arch Lab.
 
-4. Discuss the role of slow brain development in human cognitive abilities.
+4. How does understanding CPU pipelining architectures contribute to enhancing the performance of a benchmark program in Part C?
 
-5. What is the importance of building 'causal models' in cognitive science and artificial intelligence?
+5. What are the key differences between legacy HCL and HCL-rs used in the current lab, and why are these changes significant?
 
-6. How does the concept of 'learning to learn' enhance cognitive capabilities?
+6. Discuss the significance of the critical path length in evaluating CPU architectures and how it affects the architecture cost metric in Part C.
 
-7. Why is building a human-like AI considered challenging, according to the lecture?
+7. Outline the steps required to test the functionality of a Y86-64 program using the assembler and simulator tools provided in the lab.
 
-8. Describe the difference between deductive and inductive inference with examples.
+8. Explain the purpose of loop unrolling in optimizing the ncopy program and the principles behind its implementation.
 
-9. Explain the significance of 'intuitive theories' in learning, as discussed in the lecture.
+9. Identify the constraints placed on the ncopy function in Part C and explain how they guide the optimization process.
 
-10. What are some key ingredients for building cognitive models that support explanation and understanding?
+10. What are the benefits of implementing the lab and its components in Rust, particularly regarding development practices and tool integrations?
 
-11. Explain the concept of affordance as defined by James J. Gibson and provide an example of affordance in an everyday object.
+11. How does the grader evaluate the different parts of the lab, and what methods are used to ensure the accuracy and fairness of the evaluation?
 
-12. Describe the Visual Cliff Experiment and its significance in understanding affordance perception in infants.
+12. Describe the significance of the handin files and the process required to prepare and submit them for evaluation.
 
-13. Differentiate between object affordance and scene affordance with suitable examples.
+13. What is a buffer overflow and why is it significant in the context of program security?
 
-14. Discuss the role of mirror neurons in understanding affordance.
+14. Explain how the function 'Gets' operates in the context of a buffer overflow vulnerability.
 
-15. What is the difference between affordance and functionality? Provide an example illustrating this difference.
+15. Discuss the role of stack and parameter-passing mechanisms in x86-64 architecture and their vulnerabilities to buffer overflow attacks.
 
-16. Explain how the concept of affordance can be utilized in computational models for robotics.
+16. What is the main difference between code-injection attacks and return-oriented programming (ROP) attacks?
 
-17. How does the concept of social affordance differ from physical affordance? Give an example of social affordance.
+17. Why is it crucial to use debugging tools like GDB and OBJDUMP when developing exploits for buffer overflow vulnerabilities?
 
-18. Discuss the challenges of affordance detection in computer vision tasks.
+18. Describe the 'getbuf' function and how its vulnerability can be exploited in the Attack Lab.
 
-19. What is the significance of Gibson's theory of affordances in moving beyond traditional object classification in computer vision?
+19. What role does the 'cookie' value play in the Attack Lab, particularly in exercises involving 'ctarget' and 'rtarget'?
 
-20. How can understanding affordances improve human-robot interaction in practical applications?
+20. How can address randomization act as a defense against buffer overflow attacks?
 
-21. Define affordance and functionality, and explain their roles in Human-Object Interaction (HOI).
+21. Explain the concept of a 'gadget' in return-oriented programming (ROP) and its importance.
 
-22. Explain how 2D Human-Object Interaction (HOI) detection is formulated using bounding boxes and labels.
+22. What challenges do non-executable stack protections introduce for attackers using buffer overflow techniques?
 
-23. Describe the process of reconstructing a 3D scene from 2D HOI data.
+23. How does the function 'hexmatch' interact with buffer overflow vulnerabilities to validate input in the context of 'touch3' in Attack Lab?
 
-24. Compare the voxel grid and point cloud methods for 3D representation in terms of their structure and application.
+24. What is the significance of endianness when crafting exploits for buffer overflow attacks?
 
-25. What are the key components of the SMPL model for human body representation?
+25. Discuss the impact of canary values in preventing simple overflow attacks in the context of the 'starget' program.
 
-26. How does scene affordance differ from object affordance, and what role does it play in Human-Scene Interaction (HSI)?
+26. Why is it important to handle input without newline characters in crafted exploit strings for Attack Lab?
 
-27. Outline the process of motion generation using an autoregressive diffusion model in Human-Scene Interaction (HSI).
+27. How does using the compiler's canary protection typically mitigate the risk of stack-based buffer overflow attacks?
 
-28. Discuss the advantages and challenges of using Signed-Distance Field (SDF) for 3D object representation.
+28. Describe how 'hex2raw' assists in crafting exploit strings for buffer overflow attacks.
 
-29. Explain how generative AI methods, such as diffusion models, contribute to 3D scene generation.
+29. Why must the stack pointer maintain 16-byte alignment when crafting ROP chains in x86-64 architecture?
 
-30. What is the role of human cues in human-centric scene synthesis, and how do they influence scene design?
+30. Explain the process of identifying useful gadgets within a program for return-oriented programming purposes.
 
-31. Explain the difference between 'soft constraints' in video generation and 'hard constraints' in robotics generation.
+31. What is a stack canary, and how does it differ from other stack protection mechanisms?
 
-32. What is the Zero Moment Point (ZMP) and its limitations in humanoid robotics?
+32. Discuss the advantages and limitations of using return-oriented programming (ROP) over traditional code injection techniques.
 
-33. Describe the Linear Inverted Pendulum Model (LIPM) and its assumptions in humanoid robot locomotion.
+33. In the context of 'ctarget' program, how can exploiting buffer overflow vulnerabilities help in achieving unauthorized access?
 
-34. How does reinforcement learning contribute to humanoid robot control, and what are its limitations?
+34. How does the randomization of stack addresses protect against straightforward exploitation attempts in programs like 'rtarget'?
 
-35. What is the sim-to-real gap, and what causes it in humanoid robotics?
+35. What strategies can attackers use to defeat stack canary protections in programs like 'starget'?
 
-36. What is motion retargeting in humanoid robotics, and why is it challenging?
+36. Describe the method for loading an exploit string from a file in a controlled environment using GDB.
 
-37. Discuss the role of imitation learning in humanoid robotics and its challenges.
+37. How does the 'objdump' tool assist in disassembling binaries and why is it important for executing return-oriented programming attacks?
 
-38. Explain the concept of 'orbital energy' in the context of LIPM for humanoid robots.
+38. Why do certain instructions require 16-byte alignment in x86-64, and how do attackers accommodate this constraint in exploits?
 
-39. What are the key factors affecting humanoid robot performance, and how should they be evaluated?
+39. Explain the process and significance of assembling and disassembling code snippets to generate byte-level representations for exploits.
 
-40. Describe the process and significance of sim-to-real transfer in humanoid robotics.
+40. What is 'HEX2RAW', and why is it necessary for sending non-printable exploit strings in buffer overflow attacks?
 
-41. Explain the Violation of Expectation (VoE) paradigm and its significance in studying intuitive physics.
+41. What limitations and challenges might be encountered when employing ROP attacks against 'starget' given its canary protection and irregular memory configurations?
 
-42. Describe the progression of physical concept acquisition in infants according to developmental psychology.
+42. What is a binary bomb as introduced in the lecture, and how does one interact with it?
 
-43. How do New Caledonian crows demonstrate an understanding of causal properties of displacement, and how does this compare to human children?
+43. Explain the purpose of obtaining and working with a unique bomb.tar file as outlined in the lecture.
 
-44. Identify and describe the brain regions involved in physical reasoning, as mentioned in the lecture.
+44. Identify the potential consequences of a bomb exploding during the Bomb Lab assignment.
 
-45. What are the key components of the PLATO model and its role in intuitive physics learning?
+45. Discuss why it is essential to avoid using brute force methods to defuse the bomb.
 
-46. Contrast the two reasoning processes, heuristics and dynamics, in solving physical puzzles.
+46. Describe the role of the GNU debugger (gdb) in the process of defusing the bomb.
 
-47. Discuss the implications of the dual-process model in understanding human physical reasoning.
+47. What is the significance of the observation that blank input lines are ignored by the bomb?
 
-48. Explain how modern AI systems attempt to model intuitive physics and the challenges they face.
+48. Explain the benefits of using an input file (e.g., psol.txt) when working with the binary bomb.
 
-49. What role do neural ODEs play in modeling continuous dynamics, and what are their limitations?
+49. Detail the hint given concerning the characteristics of the solution for phase 5.
 
-50. How do video generation models contribute to the understanding of intuitive physics, and what are their current limitations?
+50. What is the recommended approach for examining a bomb without causing it to explode?
 
-51. Explain Aristotle's four types of causes and provide an example of each.
+51. Explain the utility of 'objdump -t' and 'objdump -d' when analyzing the binary bomb.
 
-52. According to David Hume, why is causality considered an illusion?
+52. Why is it crucial to avoid using gdb to jump directly to a particular phase?
 
-53. Describe Immanuel Kant's solution to Hume's skepticism about causality.
+53. Describe how setting breakpoints in gdb can help in defusing the bomb.
 
-54. What is the significance of Judea Pearl's Ladder of Causation in understanding causal relationships?
+54. What is the purpose of examining the bomb's symbol table using 'objdump -t'?
 
-55. How did Francis Galton and Karl Pearson contribute to the development of causal analysis?
+55. What is the advantage of using 'strings' utility on the binary bomb?
 
-56. Discuss the role of counterfactual theory in causal reasoning with an example.
+56. Contrast the usage of 'p' and 'x' commands in gdb during debugging.
 
-57. What challenges do researchers face when integrating causality into AI, and how can causal representation learning help?
+57. Outline the steps to automate gdb configurations with a .gdbinit file.
 
-58. Why is causal perception considered a subjective cognitive phenomenon, and how does it differ from statistical causality?
+58. How can breakpoint scripting enhance debugging efficiency in gdb?
 
-59. Provide an example of how visual causal reasoning is demonstrated in children according to the lecture.
+59. What does Dr. Evil's addition of switching to stdin after EOF signify for debugging?
 
-60. Explain the potential outcomes framework by Donald Rubin and its application in causal inference.
+60. Discuss the significance of learning how to single-step through assembly code.
 
-61. What is the mirror neuron system (MNS), and why is it important in understanding imitation?
+61. What are the components provided upon extracting 'bombk.tar', and their uses?
 
-62. Compare and contrast the Transformative and Associative theories of imitation.
+62. What are the risks of expanding 'bombk.tar' on a non-Linux platform like a PC?
 
-63. How do observational studies support the notion that babies are good imitators?
+63. Provide a common debugging strategy involving 'phase_1' and breakpoints.
 
-64. What role does imitation play in social development according to the lecture?
+64. How does 'disas' command assist in breaking down the bomb's functionality?
 
-65. Explain the concept of kinesthetic teaching in the context of robot imitation learning.
+65. Why is it advisable to monitor Autolab scoreboard during the assignment?
 
-66. What are some challenges associated with using Behavior Cloning as an imitation learning approach?
+66. Explain how layout controls enhance gdb debugging during the lab.
 
-67. Describe how the DAgger algorithm addresses the limitations of Behavior Cloning.
+67. What does input from stdin suggest in the context of bomb functionality?
 
-68. What are the levels of imitation as discussed in the lecture, and how do they differ?
+68. How do secretive instructions about the Secret phase challenge students?
 
-69. How does the lecture define and differentiate between 'imitation learning' and 'inverse reinforcement learning'?
+69. In the context of this lab, what is considered a 'successful defuse' concerning each phase?
 
-70. Why is it challenging to apply the Mirror Neuron System theory to human brains, and how is this overcome in research?
+70. Distinguish between the use of breakpoints and memory watchpoints in gdb during debugging.
 
-71. What is the difference between affordance and functionality in the context of tool-use?
+71. What considerations should be made for the gdb jump command (j) usage in this lab?
 
-72. Explain the role of hand-eye coordination and body schema in human manipulation and tool-use.
+72. What is the primary objective of the Cache Lab as described in the lecture content?
 
-73. Describe the concept of 'embodied intelligence' in the context of robotic tool-use.
+73. Explain the concept of a cache memory and its importance in computer systems.
 
-74. How does causal reasoning contribute to tool-use in both humans and AI systems?
+74. Describe the role of the csim.c file in Part A of the Cache Lab.
 
-75. What is the importance of social learning in the development of tool-use abilities in animals?
+75. How does a cache simulator utilize the LRU (Least Recently Used) replacement policy?
 
-76. What are the key components of executive control in the context of tool-use?
+76. What is a valgrind memory trace file, and how is it used in this lab?
 
-77. How does imitation learning contribute to the development of AI systems capable of tool-use?
+77. List and explain the possible types of memory access operations found in a valgrind trace.
 
-78. Discuss the significance of affordance detection at part levels for robotic manipulation.
+78. What optimization strategies are suggested for improving the performance of the matrix transpose function in Part B?
 
-79. What is the role of computational models in understanding tool-use in AI systems?
+79. Explain the importance of correctly aligning memory accesses when simulating a cache.
 
-80. Explain how task planning is related to executive control in AI systems designed for tool-use.
+80. What are the restrictions on variable usage in Part B of the Cache Lab assignment, and why are they imposed?
+
+81. Why is it important for the csim.c file to compile without warnings?
+
+82. Identify the command-line arguments required by the reference cache simulator and explain their significance.
+
+83. Discuss the impact of endianness on the memory access patterns examined in this lab.
+
+84. In the context of this lab, how are matrix transpose operations typically optimized to reduce conflict misses?
+
+85. Explain the term 'cache eviction' and when it occurs in a cache system.
+
+86. How does the Cache Lab evaluate the performance of the transpose_submit function?
+
+87. Describe the role of the test-csim program provided in the lab materials.
+
+88. Why is it advised not to expand the .tar file on a laptop, as per the lecture instructions?
+
+89. What is meant by 'aligned properly' in the context of memory accesses for the Cache Lab?
+
+90. Explain the functionality of the printSummary function in this lab.
+
+91. What are reference trace files, and how are they employed in the Cache Lab?
+
+92. Under what conditions will a 'modify' (M) operation result in two cache hits?
+
+93. In what ways can blocking improve the performance of matrix transpose operations?
+
+94. Discuss the implications of using the getopt function in handling command-line arguments for the cache simulator.
+
+95. Why is it necessary to include specific header files for parsing command-line arguments in C?
+
+96. What is the significance of including the student's name and ID in the file headers for this lab?
+
+97. Why is using malloc function important for working on the cache simulator?
+
+98. What are the potential consequences of stack accesses that the style guidelines aim to prevent?
+
+99. Why might an implementation be penalized for failing to compile without warnings?
+
+100. What are the key differences in handling small versus large matrices in terms of cache optimization strategies?
+
+101. How does the test-trans program contribute to the assessment of a student's code in Part B?
+
+102. Explain the purpose of the 'Data Lab' assignment in the context of learning bit-level manipulation.
+
+103. What are the logistics students need to consider while completing the 'Data Lab' assignment?
+
+104. Describe the steps required for accessing and setting up the lab materials for 'Data Lab'.
+
+105. What are the coding constraints applied to solving functions in 'Data Lab', as found in 'bits.c'?
+
+106. Discuss the types of functions that students are required to implement in the 'Bit Manipulations' section.
+
+107. What strategies can students employ to develop and test their solutions effectively for the 'Data Lab' puzzles?
+
+108. How is a student's work evaluated in the 'Data Lab' and what constitutes a full score?
+
+109. Define the roles of 'btest', 'dlc', 'BDD checker', and 'driver.pl' tools in completing the 'Data Lab' assignment.
+
+110. What are potential pitfalls students should avoid during the 'Data Lab' assignment?
+
+111. Explain the submission limitations and penalties for the 'Data Lab'.
+
+112. What are the primary functions you need to implement in the dynamic storage allocator?
+
+113. Explain the purpose of the mm_checkheap function.
+
+114. What are some of the rules regarding global data structures in this lab?
+
+115. Why is it important that your allocator runs on 64-bit machines, and what considerations must be made?
+
+116. Discuss the importance of space utilization and throughput in evaluating your allocator.
+
+117. What is an explicit free list and how does it differ from an implicit free list?
+
+118. In what scenario would realloc not change the address of the memory block when called?
+
+119. Describe the tasks handled by the memlib.c package in this lab.
+
+120. What should the allocator return when free is called with a NULL pointer?
+
+121. What is the role of the mdriver.c program in the malloc lab?
+
+122. Explain the purpose of using inline functions or macros for pointer arithmetic in this lab.
+
+123. What are some debugging techniques recommended in the lab?
+
+124. What penalties are associated with solving specifically for any of the traces in the lab?
+
+125. Why should your heap checker only produce output when an error is detected?
+
+126. Why is it important to start early on this lab, as recommended in the document?
+
+127. How should the performance index be interpreted when testing the allocator?
+
+128. Describe the structure and purpose of prologue and epilogue blocks in memory allocation.
+
+129. What should the allocator return when realloc is called with size equal to zero?
+
+130. Why might you use the -D option when running the driver program?
+
+131. What is the significance of aligning pointers to 8-byte boundaries?
+
+132. How do segregated free lists improve memory allocation performance?
+
+133. What strategy does the lab suggest for developing your allocator incrementally?
+
+134. In what way does gdb's watch command assist in debugging memory errors?
+
+135. Why is it important to ensure that your code must compile without warnings?
+
+136. Explain why encapsulating pointer arithmetic in macros or inline functions is recommended.
+
+137. What is the utility of maintaining backups of working versions during lab development?
+
+138. Discuss the trade-off between space utilization and speed in memory management.
+
+139. What checks should be included in a high-quality heap checker for an explicit list?
+
+140. Explain the primary role of a proxy server in web communication.
+
+141. Describe how a proxy server can function as an anonymizer.
+
+142. What are some common use cases for web proxies?
+
+143. Outline the steps involved in setting up a proxy to handle HTTP requests.
+
+144. What HTTP version should your proxy use when forwarding requests, and why?
+
+145. What is the significance of handling multiple concurrent connections in a proxy server? Describe the basic architecture employed to achieve this.
+
+146. How can race conditions be managed in a multi-threaded proxy server?
+
+147. Why must a proxy be careful with both synchronization and caching in a multi-threaded environment?
+
+148. What are the maximum cache and object sizes for the proxy, and why are they significant?
+
+149. Describe an LRU cache eviction policy and its importance in the proxy server context.
+
+150. What role do request headers play in HTTP communication through a proxy, and list the key headers a proxy should include?
+
+151. Distinguish the handling of HTTP/1.0 and HTTP/1.1 requests and responses in a proxy.
+
+152. Outline the proper steps to test and debug a proxy using tools like curl and netcat.
+
+153. Explain how you would use the web browser's debugging tools to ensure your proxy correctly handles web page requests.
+
+154. How can you ensure your proxy handles binary data, such as images and videos, correctly?
+
+155. What are the potential consequences of improper synchronization in a multi-threaded proxy?
+
+156. What mitigation strategy would you employ for handling segmentation faults in your proxy server?
+
+157. Explain why multi-threading contributes to more efficient proxy server performance.
+
+158. Discuss the importance of using a robust I/O package in developing a proxy server, drawing from the lecture content.
+
+159. How might changes in the HTTP protocol, like new HTTP versions, impact proxy server implementation?
+
+160. Identify challenges in translating higher version HTTP requests to HTTP/1.0 in a proxy, and propose solutions.
+
+161. What advantages do modular programming practices provide when developing a proxy server?
+
+162. Why would a proxy server be configured to ignore specific headers from clients, and which headers must be transformed?
+
+163. Illustrate the process of setting up and testing a proxy server with browser-based tools detailed in the lecture.
+
+164. Discuss why disabling browser caching is recommended when testing proxy caching functionality.
+
+165. What debugging strategies can be used to trace malformed HTTP requests in your proxy server?
+
+166. What methods can enhance the robustness of a proxy server against common network errors as presented in the lecture?
+
+167. What is the primary purpose of implementing a Linux shell program in this assignment?
+
+168. List the key functions that need to be completed in the shell lab, and provide a brief description of each.
+
+169. Explain the concept of job control in the context of a shell program.
+
+170. What are the advantages of implementing job IDs (JIDs) in the shell, and how do they differ from process IDs (PIDs)?
+
+171. Describe how input and output redirection is handled in a Linux shell.
+
+172. Explain the significance of blocking and unblocking signals when managing process control in a shell.
+
+173. Discuss the role of the waitpid system call in the context of the shell lab.
+
+174. How does the shell respond to EOF, and what trace file tests this behavior?
+
+175. When a user types 'ctrl-c', what happens in a properly implemented shell under this lab specification?
+
+176. Describe the purpose and usage of the command 'setpgid(0, 0)' in the shell lab context.
+
+177. Why is it important for the shell to implement the nohup command and manage SIGHUP signals?
+
+178. What role does the sigchld_handler play in the shell, and how does it help manage process states?
+
+179. What are the built-in commands that the shell must support, and what is the purpose of each?
+
+180. How does the shell differentiate between a built-in command and an external executable?
+
+181. In what scenario does the SIGTSTP signal affect a job, and what is the default action for this signal?
+
+182. Discuss the importance of the sigprocmask function in the context of evaluating jobs in the shell.
+
+183. When implementing the shell, how should SIGINT and SIGTSTP signals be forwarded, and why is this forwarding necessary?
+
+184. How does the shell manage jobs when the user inputs the '&' character at the end of a command line?
+
+185. What is the impact of improper signal handling in a shell, and how does it affect user experience?
+
+186. Describe the process of reaping zombie processes in the context of the shell lab.
+
+187. How can race conditions arise in the shell, and what strategies are suggested to mitigate them?
+
+188. Why is it essential to test a shell implementation thoroughly using tools like runtrace and sdriver?
+
+189. What is the role of helper functions in implementing the eval function, and why are they important?
+
+190. How does a shell determine that a command line ends with an ampersand, and what subsequent actions does it take?
+
+191. Why is it recommended not to use system calls like tcsetpgrp in the shell lab, and what could be potential consequences?
+
+192. In the shell lab, how should signals be handled within a script that is part of job control, and why is this handling critical?
+
+193. What is meant by running a job in the foreground, and how does the shell enforce this state during execution?
+
+194. Explain the significance of creating child processes with fork in the shell, and what potential errors must be handled?
+
+195. Why must the shell correctly implement input/output redirection, and what are the implications of its failure?
+
+196. Describe the difference between handling SIGINT and SIGTERM within the shell and the practical reasons for these differences.
 

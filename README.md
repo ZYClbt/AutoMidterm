@@ -47,10 +47,10 @@ Place your lecture PDF files in the `slices/` directory. Each PDF will be proces
 
 ### Step 2: Generate Questions
 
-Run `generate_question.py` to generate questions from all PDFs in the `slices/` directory:
+Run `scripts/generate_question.py` to generate questions from all PDFs in the `slices/` directory:
 
 ```bash
-python generate_question.py --num-questions <num> --model <model_type>
+python scripts/generate_question.py --num-questions <num> --model <model_type>
 ```
 
 **Key Parameters:**
@@ -66,10 +66,10 @@ Questions are saved as JSON files in the `questions/` directory, with one file p
 
 ### Step 3: Organize Questions into Text Format
 
-Run `generate_txt_files.py` to organize all questions into readable text files:
+Run `scripts/generate_txt_files.py` to organize all questions into readable text files:
 
 ```bash
-python generate_txt_files.py --questions-dir <questions_dir> --output-dir <questions_txt_save_dir>
+python scripts/generate_txt_files.py --questions-dir <questions_dir> --output-dir <questions_txt_save_dir>
 ```
 
 This generates three files:

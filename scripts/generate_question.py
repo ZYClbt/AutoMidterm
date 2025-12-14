@@ -177,8 +177,8 @@ def main():
     parser.add_argument(
         '--prompt-file',
         type=str,
-        default='prompt.txt',
-        help='Prompt template file (default: prompt.txt)'
+        default='scripts/prompt.txt',
+        help='Prompt template file (default: scripts/prompt.txt)'
     )
     parser.add_argument(
         '--lecture',
